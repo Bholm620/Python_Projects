@@ -1,0 +1,19 @@
+{%  extends "base.html" %}
+
+{% block title %}Los Dos Buhles{%  endblock %}
+
+{% block header %} Is Maith Liom Ni Conai{% endblock %}
+
+
+{% block content %}
+    {% for product in products %}
+        <ul>
+            {% if product == "Ull" %}
+            <li>Hello {{ product }}</li>
+            {% else %}
+            <li><{{ product }}/li>
+            {% endif %}
+        </ul>
+    {% endfor %}
+Ich wandere mamchal...
+{% endblock %}
